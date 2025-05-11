@@ -85,6 +85,13 @@
                         "required": true
                     },
                     {
+                        "id": "comment",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "height": 2
+                    },
+                    {
                         "type": "deleteButton",
                         "name": "Delete"
                     },
@@ -104,23 +111,36 @@
                 "url": "/group",
                 "formFieldList": [
                 {
-                "id": "name",
-                "type": "text",
-                "name": "GroupName",
-                "width": 2,
-                "required": true
+                    "id": "name",
+                    "type": "text",
+                    "name": "GroupName",
+                    "width": 2,
+                    "required": true
                 },
                 {
-                "type": "deleteButton",
-                "name": "Delete"
+                    "id": "creationDate",
+                    "type": "date",
+                    "name": "CreationDate",
+                    "width": 2
                 },
                 {
-                "type": "cancelButton",
-                "name": "Cancel"
+                    "id": "comment",
+                    "type": "text",
+                    "name": "Comments",
+                    "width": 2,
+                    "height": 2
                 },
                 {
-                "type": "okButton",
-                "name": "Ok"
+                    "type": "deleteButton",
+                    "name": "Delete"
+                },
+                {
+                    "type": "cancelButton",
+                    "name": "Cancel"
+                },
+                {
+                    "type": "okButton",
+                    "name": "Ok"
                 }
                 ]
             },

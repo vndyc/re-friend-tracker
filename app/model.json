@@ -346,6 +346,43 @@
                     ]
                     },
                     {
+                        "id": "friendactivitiespage",
+                        "url": "/friend/:friendKey/activity",
+                        "elementList": [
+                            {
+                                "type": "backbutton"
+                            },
+                            {
+                                "type": "editButton",
+                                "name": "Edit Friend",
+                                "icon": "fa-user-edit",
+                                "color": "green",
+                                "form": {
+                                    "form": "FriendForm"
+                                }
+                            },
+                            {
+                                "type": "newButton",
+                                "name": "Add Activity",
+                                "icon": "fa-calendar-plus",
+                                "color": "orange",
+                                "form": {
+                                    "form": "AddActivityForm"
+                                }
+                            },
+                            {
+                                "type": "list",
+                                "icon": "fa-calendar",
+                                "color": "pumpkin",
+                                "search": true,
+                                "url": "/friend/:friendKey/activity",
+                                "form": {
+                                    "form": "AddActivityForm"
+                                }
+                            }
+                        ]
+                    },
+                    {
                     "id": "activityfriends",
                     "url": "/activity/:activityKey/friend",
                     "elementList": [
